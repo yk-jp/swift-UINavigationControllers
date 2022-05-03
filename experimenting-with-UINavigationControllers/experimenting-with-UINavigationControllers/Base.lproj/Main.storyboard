@@ -22,9 +22,8 @@
                                     <constraint firstAttribute="height" constant="400" id="ldE-eN-uOk"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-ua-Zcg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-ua-Zcg">
                                 <rect key="frame" x="161" y="745" width="92" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Coat room"/>
                                 <connections>
@@ -38,6 +37,8 @@
                             <constraint firstItem="Wz7-Or-bGP" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1lD-wL-Qj4"/>
                             <constraint firstItem="Wz7-Or-bGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3lQ-IV-9Y1"/>
                             <constraint firstItem="Wz7-Or-bGP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Slz-Kr-luB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l1L-ua-Zcg" secondAttribute="bottom" constant="86" id="dau-5s-36s"/>
+                            <constraint firstItem="l1L-ua-Zcg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcc-ao-UWh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Doorway" id="Fc3-PQ-qj6"/>
@@ -49,7 +50,7 @@
         <!--Coat room-->
         <scene sceneID="VrD-3X-HaF">
             <objects>
-                <viewController id="YCL-Ab-GWL" sceneMemberID="viewController">
+                <viewController id="YCL-Ab-GWL" customClass="CoatRoomViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MeV-cI-k5T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +124,7 @@
         <!--Library-->
         <scene sceneID="GK9-dD-dHp">
             <objects>
-                <viewController id="Tww-rR-070" sceneMemberID="viewController">
+                <viewController id="Tww-rR-070" customClass="LibraryViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLQ-X9-hAN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,29 +162,11 @@
         <!--Dungeon-->
         <scene sceneID="aS4-pQ-gUO">
             <objects>
-                <viewController id="Hdi-eB-8iZ" sceneMemberID="viewController">
+                <viewController id="Hdi-eB-8iZ" customClass="DungeonViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GBe-Rv-bqq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPi-jK-CLf">
-                                <rect key="frame" x="179" y="691" width="70" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Library"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tnd-y4-BVH">
-                                <rect key="frame" x="161" y="746" width="106" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Dining Room"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEY-BL-jAE">
-                                <rect key="frame" x="172" y="801" width="84" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stairs Up"/>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dungeon" translatesAutoresizingMaskIntoConstraints="NO" id="h9B-b6-sCt">
                                 <rect key="frame" x="0.0" y="248" width="414" height="400"/>
                                 <constraints>
@@ -208,7 +191,7 @@
         <!--Generator-->
         <scene sceneID="3p0-r1-0ZT">
             <objects>
-                <viewController id="Ddk-kF-Zd2" sceneMemberID="viewController">
+                <viewController id="Ddk-kF-Zd2" customClass="GeneratorViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="o2i-7m-c5n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -237,13 +220,19 @@
         <!--Dining room-->
         <scene sceneID="voy-k0-N9q">
             <objects>
-                <viewController id="hdu-hS-nPi" sceneMemberID="viewController">
+                <viewController id="hdu-hS-nPi" customClass="DiningRoomViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBQ-Tb-qbW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dining_room" translatesAutoresizingMaskIntoConstraints="NO" id="POg-WW-HSK">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="fEp-4Z-Y3n"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkM-JD-cSL">
-                                <rect key="frame" x="178" y="746" width="73" height="8"/>
+                                <rect key="frame" x="154" y="725" width="106" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Kitchen"/>
@@ -251,12 +240,6 @@
                                     <segue destination="ZHm-vB-EJX" kind="show" id="0QF-Xu-Ipb"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dining_room" translatesAutoresizingMaskIntoConstraints="NO" id="POg-WW-HSK">
-                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="fEp-4Z-Y3n"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uZC-P2-DL2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -275,7 +258,7 @@
         <!--Bath room-->
         <scene sceneID="mUr-Ft-ya4">
             <objects>
-                <viewController id="mtp-Pa-spg" sceneMemberID="viewController">
+                <viewController id="mtp-Pa-spg" customClass="BathRoomViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n0x-at-wsK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -304,7 +287,7 @@
         <!--Bed room-->
         <scene sceneID="hvA-Bj-gtO">
             <objects>
-                <viewController id="62q-1Z-l4a" sceneMemberID="viewController">
+                <viewController id="62q-1Z-l4a" customClass="BedRoomViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cMf-kG-WXf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -333,7 +316,7 @@
         <!--Stairs up-->
         <scene sceneID="5hW-gX-iZr">
             <objects>
-                <viewController id="kcS-dZ-eD5" sceneMemberID="viewController">
+                <viewController id="kcS-dZ-eD5" customClass="StairsUpViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AxM-38-CfM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -380,7 +363,7 @@
         <!--Back porch-->
         <scene sceneID="azV-e0-rPd">
             <objects>
-                <viewController id="zrP-bF-8Ou" sceneMemberID="viewController">
+                <viewController id="zrP-bF-8Ou" customClass="BackPorchViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mOq-yB-aHY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -409,13 +392,19 @@
         <!--Kitchen-->
         <scene sceneID="8Cg-u1-v9e">
             <objects>
-                <viewController id="ZHm-vB-EJX" sceneMemberID="viewController">
+                <viewController id="ZHm-vB-EJX" customClass="KitchenViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2ab-kl-BwM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="R8k-d8-iCi">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="BOC-gh-6gT"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmJ-cm-GAf">
-                                <rect key="frame" x="166" y="746" width="97" height="31"/>
+                                <rect key="frame" x="130" y="744" width="155" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back porch"/>
@@ -423,12 +412,6 @@
                                     <segue destination="zrP-bF-8Ou" kind="show" id="Py4-7q-uyH"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kitchen" translatesAutoresizingMaskIntoConstraints="NO" id="R8k-d8-iCi">
-                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="BOC-gh-6gT"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RIV-ck-TQk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -447,13 +430,13 @@
         <!--Secret passage-->
         <scene sceneID="qgT-JR-wqC">
             <objects>
-                <viewController id="Aui-Ie-Re0" sceneMemberID="viewController">
+                <viewController id="Aui-Ie-Re0" customClass="SecretPassageViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E7Q-ac-4Nv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhl-If-ATZ">
-                                <rect key="frame" x="173" y="691" width="83" height="31"/>
+                                <rect key="frame" x="173" y="699" width="83" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Dungeon"/>
@@ -470,8 +453,14 @@
                                     <segue destination="2Hv-Vt-nSR" kind="show" id="Cfv-6O-hPV"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="HGg-4e-ddg">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="QV1-AN-Bif"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ek9-Yv-312">
-                                <rect key="frame" x="152" y="801" width="125" height="31"/>
+                                <rect key="frame" x="138" y="801" width="153" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Mysterious lake"/>
@@ -479,12 +468,6 @@
                                     <segue destination="h9q-T3-Ruz" kind="show" id="dAo-pE-16Y"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="secret_passage" translatesAutoresizingMaskIntoConstraints="NO" id="HGg-4e-ddg">
-                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="QV1-AN-Bif"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n8m-j4-uC0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -498,18 +481,24 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eu5-NN-0Bq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3880" y="-1635"/>
+            <point key="canvasLocation" x="3879.7101449275365" y="-1635.2678571428571"/>
         </scene>
         <!--Labratory-->
         <scene sceneID="UDC-vC-hTj">
             <objects>
-                <viewController id="2Hv-Vt-nSR" sceneMemberID="viewController">
+                <viewController id="2Hv-Vt-nSR" customClass="LabratoryViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0KZ-mJ-lRF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-1t-U9T">
+                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="F5G-q1-7FS"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of1-5o-HIu">
-                                <rect key="frame" x="170" y="746" width="89" height="31"/>
+                                <rect key="frame" x="139" y="746" width="137" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Generator"/>
@@ -517,12 +506,6 @@
                                     <segue destination="Ddk-kF-Zd2" kind="show" id="055-YO-fpb"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labratory" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-1t-U9T">
-                                <rect key="frame" x="0.0" y="248" width="414" height="400"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="F5G-q1-7FS"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0GY-i6-vX1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -536,18 +519,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DMZ-lC-AwJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4858" y="-1635"/>
+            <point key="canvasLocation" x="4857.971014492754" y="-1635.2678571428571"/>
         </scene>
         <!--Mysterious lake-->
         <scene sceneID="xZD-Ml-Dqh">
             <objects>
-                <viewController id="h9q-T3-Ruz" sceneMemberID="viewController">
+                <viewController id="h9q-T3-Ruz" customClass="MysteriousLakeViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XS8-3Q-YM3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUi-4S-Y5n">
-                                <rect key="frame" x="154" y="746" width="120" height="31"/>
+                                <rect key="frame" x="123" y="746" width="151" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Cursed chalice"/>
@@ -574,12 +557,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iqJ-no-pEY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4858" y="-878"/>
+            <point key="canvasLocation" x="4857.971014492754" y="-878.57142857142856"/>
         </scene>
         <!--Cursed chalice-->
         <scene sceneID="PzK-gj-otG">
             <objects>
-                <viewController id="ubA-3B-hqj" sceneMemberID="viewController">
+                <viewController id="ubA-3B-hqj" customClass="CursedChaliceViewController" customModule="Experimenting_with_UINavigationControllers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fbf-Fv-k7x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
